@@ -1,3 +1,3 @@
-type 'a mylist = Nil | Cons of 'a * 'a mylist
+type 'a mylist = [] | ( :: ) of 'a * 'a mylist
 
-let rec length = function Nil -> 0 | Cons (_, xs) -> 1 + length xs
+let rec length = function [] -> 0 | _ :: xs -> 1 + length xs
