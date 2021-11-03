@@ -1,0 +1,51 @@
+profile=ocamlformat
+quiet=false
+max-iters=10
+comment-check=true
+wrap-fun-args=true
+wrap-comments=false
+type-decl-indent=2
+type-decl=compact
+stritem-extension-indent=0
+space-around-variants=false
+space-around-records=false
+space-around-lists=false
+space-around-arrays=false
+single-case=compact
+sequence-style=separator
+sequence-blank-line=compact
+parse-docstrings=false
+parens-tuple-patterns=multi-line-only
+parens-tuple=always
+parens-ite=false
+ocp-indent-compat=false
+
+#Ensures that a nested match is indented and is wrapped with parentheses
+nested-match=wrap
+module-item-spacing=sparse
+# max-indent=none
+# match-indent-nested=never
+match-indent=0
+margin=80
+let-module=compact
+let-binding-spacing=compact
+let-binding-indent=2
+let-and=compact
+infix-precedence=indent
+indicate-nested-or-patterns=space
+indent-after-in=0
+if-then-else=compact
+function-indent-nested=never
+function-indent=2
+field-space=tight
+extension-indent=2
+exp-grouping=preserve
+doc-comments-tag-only=default
+doc-comments-padding=2
+doc-comments=after-when-possible
+disable=false
+cases-exp-indent=4
+
+# Ensures that all the match cases are alligned vertically
+break-cases=all
+assignment-operator=end-line
