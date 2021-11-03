@@ -48,6 +48,22 @@ module ListStack = struct
     | _ :: xs -> xs
 end
 
+module ListQueue = struct
+  type 'a queue = 'a list
+
+  let empty = []
+
+  let enqueue x q = q @ [x]
+
+  let peek = function
+    | [] -> None
+    | x :: _ -> Some x
+
+  let dequeue = function
+    | [] -> None
+    | _ :: q -> Some q
+end
+
 let lst =
   let open ListStack in
   empty |> push 42 |> peek
